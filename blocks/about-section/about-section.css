@@ -1,0 +1,124 @@
+.about{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.about__title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 45px;
+}
+.about__first-title{
+	font-family: 'Kaushan Script';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 44px
+}
+
+.about__second-title{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: bold;
+
+font-size: 36px;
+line-height: 42px;
+}
+.about__second-title::after{
+	content: "";
+    display: block;
+    width: 170px;
+    height: 3px;
+    background-color: #F38281;
+    margin: 44px auto 0;
+}
+
+.about__info{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 30px;
+
+}
+.about__info-text{
+	font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 21px;
+}
+.about__list{
+	display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
+.about__img:hover img{
+    opacity: .1;
+}
+.about__img:hover{    
+    transform: translate3d(-10px, -10px, -10px);
+    box-shadow: 15px 15px 1px #95E1D3;
+}
+.about__img{
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9));
+    transition: transform .2s linear;
+}
+.about__img img{
+    transition: opacity .1s linear;
+}
+.about__icon{
+    opacity: 0;
+    position: absolute;
+    top: 450px;
+    left: 270px;
+    z-index: 2;
+    color: red;
+}
+.about__img_title{
+    opacity: 0;
+    position: absolute;
+    top: 500px;
+    left: 280px;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    transition: opacity .2s linear;
+}
+.about__img:hover + .about__img_title{
+    opacity: 1;
+}
+.about__img_title:last-child{
+    left: 1070px;
+}
+.about__img_title:nth-child(4){
+    left: 670px;
+}
+
+@media screen and (max-width: 1024px) {
+	.about__title {
+		font-size: 24px;
+	}
+
+	.about__info {
+		font-size: 14px;
+	}
+
+	.about__galry {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+		padding-top: 58px;
+	}
+
+	.about__img {
+		max-width: 288px;
+		height: 100%;
+	}
+
+}

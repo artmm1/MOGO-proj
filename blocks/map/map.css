@@ -1,0 +1,32 @@
+.map {
+	background: url("/src/img/mapback.png") center no-repeat;
+	max-height: 231px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	padding: 42px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1510px;
+	margin: 0 auto;
+}
+
+.map__title {
+	font-family: 'Raleway';
+	font-weight: 900;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #F38281;
+}
+.map__title::after{
+	content: "";
+    display: block;
+    width: 170px;
+    height: 3px;
+    background-color: #F38281;
+    margin: 44px auto 0;
+	
+	
+}

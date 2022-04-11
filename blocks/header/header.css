@@ -1,0 +1,289 @@
+
+.menu{
+	max-width: 1510px;
+	margin: 0 auto;
+	background:linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9)) 100%, url(/src/img/eagle.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	left: 0;
+	right: 0;
+	
+	
+	
+	
+}
+.wrap{
+	max-width: 1170px;
+	margin: 0 auto;
+	
+	
+	
+}
+.header__wrap{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-top: 45px;
+}
+
+
+.menu__list{
+	display: flex;
+	gap: 35px;
+	margin: 0 0 0 100px;
+	flex-wrap: wrap;
+	
+}
+.menu__item{
+
+}
+.menu__item:not(:last-child) {
+	margin: 0px 20px 0px 0px;
+
+}
+.menu__link{
+font-family: 'Raleway';
+
+color: white;
+font-size: 14px;
+line-height: 16px;
+text-decoration: none;
+}
+.menu__link:hover, .menu__link:active, .menu__link:focus{
+	opacity: 0.7;
+	border-bottom: 1px solid white;
+}
+
+
+.intro__wrap{
+	max-width: 1170px;
+	margin: 0 auto;
+	
+	
+}
+
+
+.intro__title{
+	padding-top: 177px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Kaushan Script';
+	font-size: 64px;
+	line-height: 93px;
+	color: white;
+
+}
+.intro__main{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.intro__text{
+	
+}
+
+.intro__main-title{
+	
+	font-family: 'Montserrat';
+	font-size: 144px;
+	font-weight: 700;
+line-height: 176px;
+color: white;
+}
+
+.intro__main-title::after{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 3px;
+    background-color: white;
+    margin: 44px auto 0;
+}
+	
+
+.intro__button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 75px;
+}
+
+.button{
+display: flex;
+font-family: 'Raleway';
+font-style: normal;
+width: 369px;
+height: 77.58px;
+justify-content: center;
+align-items: center;
+
+border: 3px solid #FFFFFF;
+box-sizing: border-box;
+font-size: 24px;
+line-height: 28px;
+color: white;
+text-decoration: none;
+
+} 
+.button:hover{
+    background-color: white;
+    color: #F4BF87;
+    border-color: #F4BF87;
+    cursor: pointer;
+}
+.button:active{
+    background-color: #95E1D3;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+.button:focus{
+    border: 3px solid #f38209;
+    color: #F38281;
+    background-color: white;
+}
+.intro__list{
+	margin-top: 115px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 35px;
+	
+	
+
+
+}
+
+
+
+
+.info__link{
+	border-top: 3px solid white;
+    width: 270px;
+    padding-top: 30px;
+    opacity: .7;
+    position: relative;
+    transition-property: border;
+    transition-duration: 1s;
+	color: white;
+	text-decoration: none;
+}
+
+.info__link:first-child{
+    opacity: 1;
+}
+.info__link:hover{
+    border-color: #F38281;
+    color: #F38281;
+    font-size: 20px;
+    background-color: white;
+}
+.info__link:first-child::before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    background-color: #F38281;
+    top: -3.5px;
+}
+.info__link:first-child:hover{
+    background-color: white;
+    opacity: 0.7;
+}
+.info__link:active{
+    color: white;
+    background-color: #F38281;
+    border-top: 3px solid white;
+}
+.info__link:focus{
+    border: 3px solid #f38209;
+    color: #F38281;
+    background-color: white;
+}
+.bold{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	.menu__nav {
+		gap: 25px;
+	}
+
+	.menu__item {
+		font-size: 13px;
+		line-height: 15.26px;
+	}
+
+	.intro__title {
+		font-size: 48px;
+	}
+
+	.intro__main {
+		font-size: 96px;
+	}
+
+	
+
+	.intro__list {
+		margin-top: 78px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.bold {
+		font-size: 24px;
+	}
+
+	.intro__text {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.menu__nav {
+		visibility: hidden;
+	}
+
+	.menu::after {
+		background-image: url("/src/img/eagle.png");
+	}
+
+	.intro__title {
+		font-size: 36px;
+	}
+
+	.intro__main {
+		font-size: 48px;
+	}
+	.intro__main{
+	font-size: 48px;
+line-height: 59px;
+width: 280px;
+	}
+	.intro__main-title{
+		font-size: 48px;
+	line-height: 59px;
+	width: 280px;
+		}
+.intro__list {
+		margin-top: 78px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	.bold {
+		display: none;
+	}
+
+	.intro__text {
+		display: none;
+	}
+}

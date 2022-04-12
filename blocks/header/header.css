@@ -210,80 +210,153 @@ text-decoration: none;
 
 
 
-@media screen and (max-width: 1024px) {
-	.menu__nav {
-		gap: 25px;
-	}
-
-	.menu__item {
-		font-size: 13px;
-		line-height: 15.26px;
-	}
-
-	.intro__title {
-		font-size: 48px;
-	}
-
-	.intro__main {
-		font-size: 96px;
-	}
-
-	
-
-	.intro__list {
-		margin-top: 78px;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.bold {
-		font-size: 24px;
-	}
-
-	.intro__text {
-		font-size: 14px;
-	}
-
+@media (max-width:1020px){
+    .header{
+        width: 100%;
+    }
+    .menu__nav{
+        display: flex;
+        position: absolute;
+        gap: 30px;
+        right: 30px;
+        top: 35px;
+    }
+    .menu__item:last-child{
+        margin-left: -5px;
+    }
+    .menu__item{
+        font-size: 13px;
+    }
+    .menu__logo-link{
+        position: absolute;
+        top: 28.48px;
+        left: 16px;
+        font-size: 28px;
+    }
+    .intro__info{
+        margin-top: -200px;
+        max-width:800px;
+        align-items: center;
+    }
+    .intro__main-title{
+        font-size: 96px;
+        width: 790px;
+        margin-top: -50px;
+    }
+    .font{
+        font-size: 24px;
+    }
+    .intro__title{
+        font-size: 48px;
+        line-height: 350px;
+    }
+    .intro__main-title::after{
+        width: 170px;
+        height: 4px;
+        margin-bottom: 50px;
+    }
+    .intro__button{
+        width: 317.14px;
+        border: 4px solid white;
+        height: 24.61px;
+        font-size: 18px;
+        text-align: center;
+        margin: -10px auto 78px;
+    }
+    .info__link {
+        width: 230px;
+        font-size: 18px;
+        border-top: 4px solid white;
+    }
+    .info__link:first-child::before{
+        height: 4px;
+        top:-4px;
+    }
+    .bold{
+        font-size: 36px;
+    }
+    .intro__list{
+        justify-content: center;
+        gap: 20px;
+    }
 }
-
-@media screen and (max-width: 320px) {
-	.menu__nav {
-		visibility: hidden;
-	}
-
-	.menu::after {
-		background-image: url("/src/img/eagle.png");
-	}
-
-	.intro__title {
-		font-size: 36px;
-	}
-
-	.intro__main {
-		font-size: 48px;
-	}
-	.intro__main{
-	font-size: 48px;
-line-height: 59px;
-width: 280px;
-	}
-	.intro__main-title{
-		font-size: 48px;
-	line-height: 59px;
-	width: 280px;
-		}
-.intro__list {
-		margin-top: 78px;
-		display: flex;
-		justify-content: space-between;
-	}
-
-
-	.bold {
-		display: none;
-	}
-
-	.intro__text {
-		display: none;
-	}
+@media (max-width: 320px){
+    .header{
+        align-items: center;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .menu__nav{
+        display: none;
+    }
+    .menu__item{
+        width: 24px;
+        display: block;
+        color: white;
+        margin-top: -8px;
+    }
+    .menu__item:hover{
+        color: #F4BF87;
+    }
+    .menu__item:active{
+        color: #95E1D3;
+    }
+    .menu__logo-link{
+        font-size: 18px;
+        left:16px;
+        margin-left: -5px;
+    }
+    .intro__info{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .font{
+        font-size: 24px;
+    }
+    .intro__title{
+        width: 288px;
+        font-size: 36px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+    .intro__main-title{
+        width: 288px;
+        font-size: 48px;
+        line-height: 100px;
+        margin-top: -135px;
+        line-height: 50px;
+    }
+    .intro__main-title::after{
+        width: 134px;
+        height: 4px;
+        margin: 60px auto 30px;
+    }
+    .intro__button{
+        width: 200px;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .intro__list{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .info__link{
+        width: 57px;
+        border-top: 4px solid white;
+    }
+    .info__link:hover{
+        background: none;
+    }
+    .info__link:first-child{
+        border-top: 4px solid #F38281;
+    }
+    .intro__text{
+        display: none;
+    }
+    .bold{
+        display: none;
+    }
 }

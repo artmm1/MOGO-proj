@@ -8,7 +8,7 @@
 .menu{
 	max-width: 1510px;
 	margin: 0 auto;
-	background:linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9)) 100%, url(./src/img/eagle.png);
+	background:linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9)) 100%, url(/src/img/eagle.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -170,6 +170,8 @@ text-decoration: none;
 
 
 }
+
+
 
 
 
@@ -791,15 +793,80 @@ margin-top: 45px;
 	transform: scale(1.1);
 }
 
-@media screen and (max-width: 320px) {
-	.team__gallery {
-		flex-wrap: wrap;
-	}
-
-	.team__gallery img {
-		max-width: 288px;
-	}
-
+@media (max-width:1020px) {
+    .team{
+        max-width: 1020px;
+        margin-top: 57px;
+    }
+    .team__text{
+        font-size: 18px;
+    }
+    .team__imageContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 318px;
+    }
+    .team__image{
+        max-width: 318px;
+    }
+    .team__galleryItem{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .team__overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 365px;
+        opacity: 0;
+        transition-duration: .5s;
+    }
+}
+@media (max-width:320px) {
+    .team{
+        max-width: 320px;
+        text-align: center;
+    }
+    .team__intro{
+        margin-left: -165px;
+        width: 289px;
+    }
+    .team__list{
+        flex-direction: column;
+    }
+    .team__text{
+        font-size: 14px;
+    }
+    .team__img{
+        max-width: 288px;
+    }
+    .team__overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 75px;
+        background: none;
+        top: auto;
+        left: -65px;
+        right: 0;
+        width: 288px;
+        height: 83px;
+        opacity: 1;
+    }
+    .team__name{
+        font-size: 18px;
+    }
+    .team__post{
+        font-size: 14px;
+    }
 }
 
 .works {
@@ -1199,7 +1266,7 @@ margin-top: 45px;
 
 }
 .map {
-	background: url("./src/img/mapback.png") center no-repeat;
+	background: url("/src/img/mapback.png") center no-repeat;
 	max-height: 231px;
 	-webkit-background-size: cover;
 	background-size: cover;
